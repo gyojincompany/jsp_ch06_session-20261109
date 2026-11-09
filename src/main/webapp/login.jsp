@@ -17,5 +17,6 @@
 	<hr>
 	<a href="board.jsp">게시판 글쓰기 바로가기</a><br><br>
 	<a href="userInfo.jsp">회원 정보 바로가기</a><br><br>
+	<a href="sessionInfo.jsp">세션정보 바로가기</a>
 </body>
 </html>

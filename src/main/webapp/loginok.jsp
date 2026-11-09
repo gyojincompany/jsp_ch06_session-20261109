@@ -20,7 +20,12 @@
 			//login ok -> session에 로그인한 유저의 아이디를 저장 
 			session.setAttribute("sessionId", mid); 
 			session.setAttribute("sessionVaild", "yes");
+			//현재 시간을 세션에 저장
+			//현재 시간을 서버에서 빼오기
+			long nowTime = System.currentTimeMillis(); //현재 시간을 서버에서 가져오기(반환타입:밀리세컨드 1/1000초)
+			session.setAttribute("loginTime", nowTime); //현재시간을 세션에 저장
 			
+			System.out.println("로그인한 시간 : " + nowTime);
 			//로그인 성공시 loginSuccess.jsp로 자동(강제) 이동
 			response.sendRedirect("loginSuccess.jsp");
 			
