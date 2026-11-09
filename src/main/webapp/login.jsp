@@ -14,5 +14,8 @@
 		비밀번호 : <input type="password" name="mpw"><br><br>
 		<input type="submit" value="로그인">
 	</form>
+	<hr>
+	<a href="board.jsp">게시판 글쓰기 바로가기</a><br><br>
+	<a href="userInfo.jsp">회원 정보 바로가기</a><br><br>
 </body>
 </html>
